@@ -23,9 +23,9 @@ const Searchbar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
 
-    if (crypto.trim() === "") {
-      return alert("Please fill in the search bar");
-    }
+    // if (crypto.trim() === "") {
+    //   return alert("Please fill in the search bar");
+    // }
     updateSearchParams(crypto.toLowerCase());
   };
   //Con esta funcion logramos hacer que lo escrito en los inputs se setee en la ruta url de nuestro navegador para luego manejarlo y hacer logica render
@@ -45,6 +45,7 @@ const Searchbar = () => {
     //Finalmente pusheamos a la ruta el nuevo path que tenemos
     router.push(newPathname, { scroll: false });
   };
+  console.log(crypto);
   return (
     <form className="searchbar" onSubmit={handleSearch}>
       <div className="searchbar__item">
