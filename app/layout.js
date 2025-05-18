@@ -2,7 +2,7 @@ import { Footer, Navbar } from '@/components';
 import './globals.css';
 
 export const metadata = {
-  title: 'Show Crypto',
+  title: 'Crypto Cards',
   description: 'The largest cryptocurrency database in the world',
 };
 
