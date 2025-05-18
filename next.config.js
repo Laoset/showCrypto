@@ -3,10 +3,10 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "cdn.coinranking.com",
-        port: "",
-        pathname: "/*****/**",
+        protocol: 'https',
+        hostname: 'cdn.coinranking.com',
+        port: '',
+        pathname: '/*****/**',
       },
     ],
   },

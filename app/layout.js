@@ -1,18 +1,20 @@
-import { Footer, Navbar } from "@/components";
-import "./globals.css";
+import { Footer, Navbar } from '@/components';
+import './globals.css';
 
 export const metadata = {
-  title: "Show Crypto",
-  description: "The largest cryptocurrency database in the world",
+  title: 'Show Crypto',
+  description: 'The largest cryptocurrency database in the world',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative">
-        <Navbar />
-        {children}
-        <Footer />
+      <body className="min-h-screen relative bgColor">
+        <div className="container mx-auto px-4 py-8 md:py-12 relative z-10">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

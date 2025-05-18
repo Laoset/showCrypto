@@ -1,25 +1,19 @@
-import Link from "next/link";
-import Image from "next/image";
-import { CustomButton } from ".";
+import { Coins } from 'lucide-react';
+
 const Navbar = () => {
   return (
-    <header className="w-full absolute z-10">
-      <nav className="flex items-center justify-between sm:px-16 px-6 py-4">
-        <Link href="/" className="flex justify-center items-center">
-          <Image
-            src="/logito.png"
-            alt="carShow"
-            width={70}
-            height={10}
-            className="object-contain"
-          />
-        </Link>
-        <CustomButton
-          title="Sign In"
-          btnType="button"
-          containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
-        />
-      </nav>
+    <header className="mb-8 md:mb-12">
+      <div className="flex justify-center items-center space-x-2 mb-3 ">
+        <Coins size={32} className="titleColor" />
+        <h1 className="text-3xl md:text-4xl font-bold titleColor">
+          CryptoCards
+        </h1>
+      </div>
+      <p className="textColor text-center max-w-2xl mx-auto font-medium">
+        Explore the latest cryptocurrency data with our interactive card
+        interface. Swipe through to discover price changes, market caps, and
+        more.
+      </p>
     </header>
   );
 };
